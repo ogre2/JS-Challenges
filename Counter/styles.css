@@ -1,0 +1,84 @@
+* {
+padding: 0;
+margin: 0;
+border: 0;
+box-sizing: border-box;
+vertical-align: baseline;
+-webkit-transition: linear 0.3s ease-in;
+-moz-transition: linear 0.3s ease-in;
+-ms-transition: linear 0.3s ease-in;
+-o-transition: linear 0.3s ease-in;
+transition: lineaar 0.3s ease-in;
+}
+:root {
+--white: #FFFFFF;
+--red: #F02D3A;
+--dark: #273043;
+--green: #06D6A0;
+--blue: #3F88C5;
+--yellow: #FBD87F;
+}
+html,
+body {
+height: 100%;
+width: 100%;
+font-family: 'Roboto', 'Open Sans', sans-serif;
+background: var(--white);
+}
+
+/* App Styles */
+.app {
+/* border: 1px solid red; */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+height: 300px;
+width: 400px;
+}
+.app .container {
+/* border: 1px solid green; */
+height: inherit;
+width: inherit;
+position: relative;
+padding: 0 30px;
+}
+.app .container .app-display {
+height: 150px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+/* border: 1px solid orange; */
+/* padding: 30px; */
+}
+.app .container .app-display .main-text {
+font-weight: 300;
+font-size: 5rem;
+}
+.app .container .app-controls {
+height: 150px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+/* border: 1px solid blue; */
+}
+.app .container .app-controls .btn {
+height: 50px;
+width: 100px;
+border-radius: 10px;
+font-weight: 600;
+}
+.app .container .app-controls .btn:hover {
+cursor: pointer;
+box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.app .container .app-controls .btn.btn-increase {
+background: var(--green);
+}
+.app .container .app-controls .btn.btn-decrease {
+background: var(--red);
+}
+.app .container .app-controls .btn.btn-reset {
+background: var(--yellow);
+}
